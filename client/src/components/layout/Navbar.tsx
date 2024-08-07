@@ -11,12 +11,11 @@ const Navbar = () => {
         backgroundColor:
           theme.palette.mode === 'dark' ? 'grey.900' : 'grey.100',
       }}
-      className="fit-content px-6 py-4 h-screen"
+      className="fit-content px-4 py-4 h-screen mb-4 shadow-lg"
     >
-      <div className="flex items-center gap-8">
+      <div className="flex flex-col items-center gap-8">
         <div className="flex items-center gap-1.5">
           <MapsUgcIcon fontSize="large" />
-          <span className="font-semibold text-xl">PERN Chat</span>
         </div>
         <ThemeToggle />
       </div>
