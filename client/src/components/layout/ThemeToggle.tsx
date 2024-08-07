@@ -10,14 +10,7 @@ export const ThemeToggle = () => {
   const colorMode = useContext(ColorModeContext);
 
   return (
-    <Box
-      sx={{
-        backgroundColor:
-          theme.palette.mode === 'dark' ? 'primary.dark' : 'primary.light',
-      }}
-      className="px-1.5 flex items-center w-fit rounded-md"
-    >
-      <span className="pl-1.5 hidden md:block">{theme.palette.mode} mode</span>
+    <Box className="flex items-center w-fit rounded-md">
       <IconButton onClick={colorMode.toggleColorMode}>
         {theme.palette.mode === 'dark' ? (
           <Brightness7 fontSize="small" />
