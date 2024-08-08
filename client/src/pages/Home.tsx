@@ -6,7 +6,7 @@ io('http://localhost:4000');
 
 const Home = () => {
   return (
-    <div className="grid grid-cols-2">
+    <div className="flex w-full">
       <RoomContainer />
       <MessageContainer />
     </div>

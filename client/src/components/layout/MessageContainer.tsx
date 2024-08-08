@@ -7,7 +7,7 @@ const MessageContainer = () => {
   return (
     <>
       {isRoomSelected ? (
-        <div className="border-l border-gray-100 shadow-md">
+        <div className="grow border-l border-gray-100 shadow-md">
           <MessageHeader />
           <MessageList />
         </div>
