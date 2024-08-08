@@ -3,6 +3,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import http from "http";
 import { Server } from "socket.io";
+import roomsRouter from "./router/room.routes";
 import { socketHandler } from "./socket/socket";
 
 dotenv.config();
@@ -25,6 +26,8 @@ app.use(
       process.env.NODE_ENV === "development" ? "http://localhost:5173" : "",
   })
 );
+
+app.use("/api/rooms", roomsRouter);
 
 socketHandler(io);
 
