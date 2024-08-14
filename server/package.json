@@ -3,10 +3,10 @@
   "module": "index.ts",
   "type": "commonjs",
   "scripts": {
-    "dev": "nodemon index.ts",
-    "build": "bunx --bun tsc ./index.ts",
-    "db:reset": "bun run db/schema.ts",
-    "db:seed": "bun run db/seed.ts"
+    "dev": "nodemon ./src/index.ts",
+    "build": "bunx --bun tsc src/index.ts",
+    "db:reset": "bun run src/db/schema.ts",
+    "db:seed": "bun run src/db/seed.ts"
   },
   "devDependencies": {
     "@types/bun": "latest",
